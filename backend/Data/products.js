@@ -1,9 +1,8 @@
 const products = [
   {
-    _id: '1',
     name: 'Disposable Masks',
     image: '/images/disposablemask.jpg',
-    description:' A disposable face mask covers your nose and mouth and is thrown away after each use',
+    description: ' A disposable face mask covers your nose and mouth and is thrown away after each use',
     brand: 'Mymedic',
     category: 'Health',
     price: 20.00,
@@ -12,10 +11,9 @@ const products = [
     numReviews: 11,
   },
   {
-    _id: '2',
     name: 'Face Sheilds',
     image: '/images/facesheilds.jpg',
-    description:'A mask, typically made of clear plastic, that protects the mucous membranes of the eyes, nose, and mouth.',
+    description: 'A mask, typically made of clear plastic, that protects the mucous membranes of the eyes, nose, and mouth.',
     brand: 'Mymedic',
     category: 'Health',
     price: 150.00,
@@ -24,10 +22,9 @@ const products = [
     numReviews: 9,
   },
   {
-    _id: '3',
     name: 'Hand Gloves',
     image: '/images/gloves.jpg',
-    description:'A covering for the hand made with a separate sheath for each finger and for the thumb',
+    description: 'A covering for the hand made with a separate sheath for each finger and for the thumb',
     brand: 'Mymedic',
     category: 'Health',
     price: 100.00,
@@ -36,7 +33,6 @@ const products = [
     numReviews: 16,
   },
   {
-    _id: '4',
     name: 'Hand Sanitizer',
     image: '/images/handsanitizer.jpg',
     description:
@@ -49,7 +45,6 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: '5',
     name: 'Protective Clothing- Full Body',
     image: '/images/protectiveclothing.jpg',
     description:
@@ -62,7 +57,6 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: '6',
     name: 'Fragrant Sanitizer Pack',
     image: '/images/sanitizerpack.jpg',
     description:
