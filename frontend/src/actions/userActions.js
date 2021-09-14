@@ -109,7 +109,7 @@ export const getUserDetails = (id) => async (dispatch, getState) => {
         const config = {
             Headers: {
                 'Content-Type': 'application/json',
-                Authorization: `Bearer ${userInfo.token}` 
+                Authorization: `Bearer ${userInfo.token}`,
             },
         }
         
@@ -137,24 +137,26 @@ export const updateUserProfile = (user) => async (dispatch, getState) => {
             type: USER_UPDATE_PROFILE_REQUEST,
         })
 
-        const { userLogin: { userInfo },
+        const { 
+            userLogin: { userInfo },
         } = getState()
 
         const config = {
-            Headers: {
+            
                 'Content-Type': 'application/json',
-                Authorization: `Bearer ${userInfo.token}` 
-            },
+                Authorization: `Bearer ${userInfo.token}`, 
+            
         }
         
         console.log(user)
-        const { data } = await axios.put(`/api/users/profile`, user, config)
+        const { data } = await axios.put(`/api/users/profile`, user,{headers:config})
 
         dispatch({
             type: USER_UPDATE_PROFILE_SUCCESS,
             payload: data,
         })
     } catch (error) {
+        console.log(error)
         dispatch({
             type: USER_UPDATE_PROFILE_FAIL,
             payload:
