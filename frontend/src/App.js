@@ -31,10 +31,7 @@ const App = () => {
          <Route path='/product/:id' component= {ProductScreen} /> 
          <Route path='/search/:keyword' component= {HomeScreen} /> 
          <Route path='/' component= {HomeScreen} exact /> 
-
-         
          <Route path='/cart/:id?' component= {CartScreen}/>
-
       </Container>
     </main>
     <Footer/>   
